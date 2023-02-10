@@ -1,0 +1,146 @@
+body{
+}
+main{
+    font-family: 'roboto';
+}
+.principal{
+    margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text h1{
+    color: #0081C9;;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.text p{
+    color: #cccccc;
+    font-size: 1.5rem;
+}
+.btn-linkedin, .btn-git{
+    background: none;
+    border: 1px solid #0081C9;
+    font-size: 1.4rem;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.btn-linkedin a, .btn-git a{
+    text-decoration: none;
+    color: #fff;
+}
+.img-in{
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+.btn-linkedin:hover, .btn-git:hover{
+    background-color: #0081C9;
+    transition: 0.3s;
+    box-shadow: 0 0 8px #fff;
+}
+
+
+
+.personal{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+.about{
+    margin: 100px 0 0 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #252525;
+    height: 600px;
+}
+.about h2{
+    color: #0081C9;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.about p{
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+.title-hab{
+    text-align: center;
+    color: #0081C9;
+    font-size: 3rem;
+    padding: 20px;
+}
+.whatiknow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.knows{
+    background-color: #cccccc;
+    margin: 0 50px 0 0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.knows:hover{
+    box-shadow: 1px 1px 8px #fff;
+    transition: 0.3s linear;
+    padding: 8px;
+}
+.description h2{
+    color: #cccccccc;
+    font-size: 2em;
+    text-align: center;
+}
+.textDescription{
+    display: none;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.projects{
+    background-color: #252525;
+}
+
+@media screen and (max-width:500px) {
+    .personal{
+        display: none;
+    }
+    .text{
+        text-align: center;
+    }
+    .text p{
+        padding: 20px;
+    }
+    .whatiknow{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .icon{
+        width: 80px;
+        height: 80px;
+    }
+    .knows{
+        margin-top: 10px;
+    }
+    .textDescription{
+        padding: 10px;
+        font-size: 15px;
+    }
+
+}
