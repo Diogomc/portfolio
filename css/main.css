@@ -1,6 +1,7 @@
 main{
     font-family: 'roboto';
 }
+
 .principal{
     margin-top: 100px;
     text-transform: uppercase;
@@ -116,18 +117,19 @@ main{
 }
 
 @media screen and (max-width:500px) {
+   
     .personal{
         display: none;
     }
-    .text{
-        text-align: center;
+    .text p {
+        font-size: 15px;
     }
-    .text p{
-        padding: 20px;
+    .text h1{
+        font-size: 40px;
     }
     .whatiknow{
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     .icon{
         width: 80px;
@@ -139,6 +141,8 @@ main{
     .textDescription{
         padding: 10px;
         font-size: 15px;
+        width: 400px;
     }
+    
 
 }

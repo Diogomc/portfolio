@@ -1,4 +1,4 @@
-const htmlDescription = document.querySelector('.html');
+const html = document.querySelector('.html');
 const littleText = document.querySelector('.none')
 const css = document.querySelector('.css')
 const js = document.querySelector('.js')
@@ -12,7 +12,7 @@ function htmlText(){
         littleText.innerHTML = 'Html é uma linguagem de marcação'
     }
 }
-htmlDescription.addEventListener('click', htmlText)
+html.addEventListener('click', htmlText)
 
 function cssText(){
     if(littleText.classList != 'w'){
