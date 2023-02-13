@@ -103,8 +103,8 @@ main{
 .knows:hover{
     background-color: #cccccc;
     transition: 0.3s linear;
-    padding: 11px;
 }
+
 .mouse-title{
     display: block;
     text-align: center;
@@ -116,6 +116,7 @@ main{
     color: #fff;
     font-size: 1.5rem;
     margin-top: 20px;
+    text-align: center;
 }
 @media screen and (max-width:500px) {
    
