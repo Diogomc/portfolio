@@ -79,43 +79,44 @@ main{
 }
 .whatiknow{
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 50px;
+    max-width: 50%;
+    gap: 10px;
+    flex-wrap: wrap;    
+}
+.skills{
+    display: flex;
 }
 .icon{
     width: 100px;
     height: 100px;
     object-fit: cover;
 }
+
 .knows{
-    background-color: #cccccc;
-    margin: 0 50px 0 0;
-    text-align: center;
+    background-color: #8c8c8ccc;
     border-radius: 20px;
     padding: 10px;
+    margin: 20px;
     cursor: pointer;
 }
 .knows:hover{
-    box-shadow: 1px 1px 8px #fff;
+    background-color: #cccccc;
     transition: 0.3s linear;
-    padding: 8px;
+    padding: 11px;
 }
-.description h2{
-    color: #cccccccc;
-    font-size: 2em;
+.mouse-title{
+    display: block;
     text-align: center;
+    color: #8c8c8ccc;
+    font-size: 30px;
+    margin-top: 40px;
 }
 .textDescription{
-    display: none;
     color: #fff;
-    text-align: center;
     font-size: 1.5rem;
+    margin-top: 20px;
 }
-.projects{
-    background-color: #252525;
-}
-
 @media screen and (max-width:500px) {
    
     .personal{
@@ -127,21 +128,19 @@ main{
     .text h1{
         font-size: 40px;
     }
-    .whatiknow{
-        align-items: center;
+    .skills{
         flex-direction: column;
     }
-    .icon{
-        width: 80px;
-        height: 80px;
+    .whatiknow{
+        max-width: 100%;
     }
-    .knows{
-        margin-top: 10px;
+    .icon{
+        width:100px;
+        height: 100px;
     }
     .textDescription{
         padding-top: 10px;
         font-size: 15px;
     }
-    
-
 }
+
