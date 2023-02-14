@@ -1,53 +1,41 @@
-const html = document.querySelector('.html');
-const css = document.querySelector('.css');
-const js = document.querySelector('.js');
-const sass = document.querySelector('.sass');
-const git = document.querySelector('.git');
-const github = document.querySelector('.github');
-const none = document.querySelector('.none')
+const hab = document.querySelectorAll('.knows');
+const textDescription = document.querySelector('.textDescription');
+const titleDescription = document.querySelector('.mouse-title')
+const aboutLanguage = [
+    '<h1>HTML</h1><p>O Html é uma linguagem de marcação utlizada para estruturação de sites.</p>',
+    '<h1>CSS</h1><p>O Css é uma linguagem de folhas de estilo, utilizada basicamente para dar estilo a componentes.</p>',
+    '<h1>JAVASCRIPT</h1><p>O Javascript é uma das principais linguagens de programação utlizada atualmente.</p>',
+    '<h1>SASS</h1><p>O Sass é um pré-processador do Css.</p>',
+    '<h1>GIT</h1><p>O Git é um sistema de controle de versão.</p>',
+    '<h1>GITHUB</h1><p>O Github é uma plataforma de hospedagem de código fonte.</p>',
+]
 
-function removeText(){
-    none.innerHTML = '';
+
+hab.forEach((element, event)=>{
+    let evento = event
+    element.addEventListener('mouseover',(event)=>{
+        textDescription.innerHTML = `<p>${aboutLanguage[evento]}<p>`
+        titleDescription.innerHTML = ''
+    })
+    element.addEventListener('mouseout', ()=>{
+        textDescription.innerHTML = ''
+        titleDescription.innerHTML = '<- Passe o mouse em algum ícone'
+    })
+
+})
+
+const scrollButton = document.querySelector('.scroll');
+
+function topSite(){
+    window.scrollTo(0,0)
 }
 
-
-function htmlText(){
-    none.innerHTML = '<p>Html é uma linguagem de marcação, capaz de criar a estrutura de um site</p>'
-    none.classList.add('textDescription')
+function topSiteDisplay(){
+    if(window.scrollY === 0){
+       scrollButton.style.display = 'none'
+    }else{
+        scrollButton.style.display = 'block'
+    }
 }
-function cssText(){
-    none.innerHTML = '<p>Css é uma linguagem de estilização</p>'
-    none.classList.add('textDescription')
-}
-function jsText(){
-    none.innerHTML = '<p>Javascript é uma linguagem de programação orientada a objetos</p>'
-    none.classList.add('textDescription')
-}function sassText(){
-    none.innerHTML = '<p>O sass é uma linguagem de folhas de estilo, é como se fosse um complemento do css</p>'
-    none.classList.add('textDescription')
-}function gitText(){
-    none.innerHTML = '<p>O git é um software de versionamento de código</p>'
-    none.classList.add('textDescription')
-}function githubText(){
-    none.innerHTML = '<p>O github é uma website com a finalidade de armazenar códigos fonte</p>'
-    none.classList.add('textDescription')
-}
-
-html.addEventListener('mouseover', htmlText)
-html.addEventListener('mouseout', removeText)
-
-css.addEventListener('mouseover', cssText)
-css.addEventListener('mouseout', removeText)
-
-
-js.addEventListener('mouseover', jsText)
-js.addEventListener('mouseout', removeText)
-
-sass.addEventListener('mouseover', sassText)
-sass.addEventListener('mouseout', removeText)
-
-git.addEventListener('mouseover', gitText)
-git.addEventListener('mouseout', removeText)
-
-github.addEventListener('mouseover', githubText)
-github.addEventListener('mouseout', removeText)
+scrollButton.addEventListener('click', topSite)
+window.addEventListener('scroll', topSiteDisplay)

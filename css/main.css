@@ -51,6 +51,10 @@ main{
     object-fit: cover;
     border-radius: 500px;
 }
+.personal:hover{
+    transform: rotate(360deg);
+    transition: 1s;
+}
 .about{
     margin: 100px 0 0 0;
     text-align: center;
@@ -102,7 +106,8 @@ main{
 }
 .knows:hover{
     background-color: #cccccc;
-    transition: 0.3s linear;
+    transition: linear 0.2s;
+    transform: scale(1.1);
 }
 
 .mouse-title{
@@ -117,6 +122,21 @@ main{
     font-size: 1.5rem;
     margin-top: 20px;
     text-align: center;
+    width: 500px;
+}
+.scroll{
+    background-image: url(/assets/top.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #252525;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999;
+    cursor: pointer;
+
 }
 @media screen and (max-width:500px) {
    
