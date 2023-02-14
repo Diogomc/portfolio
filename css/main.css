@@ -168,6 +168,7 @@ main{
         padding: 10px 0 10px 0;
     }
     .scroll{
+        bottom: 50px;
         right: 0;
     }
     .mouse-title{
