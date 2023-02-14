@@ -161,10 +161,17 @@ main{
     }
     .textDescription{
         padding-top: 10px;
-        font-size: 15px;
+        font-size: 20px;
+        max-width: 100vw;
+    }
+    .textDescription h1{
+        padding: 10px 0 10px 0;
     }
     .scroll{
         right: 0;
+    }
+    .mouse-title{
+        font-size: 25px;
     }
 }
 

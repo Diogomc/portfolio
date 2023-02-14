@@ -27,7 +27,7 @@ hab.forEach((element, event)=>{
 const scrollButton = document.querySelector('.scroll');
 
 function topSite(){
-    window.scrollTo(0,0)
+    window.scrollTo(0, 0)
 }
 
 function topSiteDisplay(){
