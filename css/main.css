@@ -230,5 +230,11 @@ main{
     .mouse-title{
         font-size: 25px;
     }
+    .projects{
+        flex-direction: column;
+    }
+    .stopwatch{
+        margin-top: 20px;
+    }
 }
 
