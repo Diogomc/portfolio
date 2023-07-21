@@ -224,7 +224,8 @@ main{
     }
     .scroll{
         bottom: 50px;
-        right: 0;
+        right: 10px;
+
     }
     .mouse-title{
         font-size: 25px;
